@@ -1235,7 +1235,19 @@
                               if(BANNER_VIDEO_VOLUME == "off") {
                                   function onPlayerReady(event) {
                                     event.target.mute();
+                                    YTrand(event);
                                   }
+                              } else {
+                                  function onPlayerReady(event) {
+                                    YTrand(event);
+                                  }
+                              }
+                              //naratteu : 재생목록 랜덤처리
+                              function YTrand(event) {
+                                event.target.setShuffle(true);  
+                                event.target.nextVideo();
+                                event.target.setShuffle(true);
+                                event.target.previousVideo();
                               }
                         </script>
                     </div>
