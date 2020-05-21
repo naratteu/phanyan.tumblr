@@ -1,0 +1,31 @@
+        <!DOCTYPE HTML>
+        <html>
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                <link rel="stylesheet" type="text/css" href="../style.css"/>
+            </head>
+            <body>
+                
+                
+                                    <h1>misc, fanart 카테고리구현</h1>
+                    <p>파냥이 스샷이 아니지만 블로그의 성격상 더불어 보관해야할 정보들을 올려야 했음, 하지만 해당 게시글들은 온전히 파냥이 스크린샷으로만 꾸며놓은 전면페이지에 어울리지 않았고, 전면페이지에 나오지 않도록 마스킹할 필요가 있었음.</p><p>테마HTML에서 전면페이지에서는 텍스트블록{block:Text}이 나오지 않도록 제거, 
+
+태그페이지 등에서는 텍스트블록이 보이도록 설정
+
+</p><p>카테고리의 포스트는 텍스트로 지정후 문서내에 사진첨부함으로써 같은 사진글처럼 보여도 전면페이지에서 숨김처리하고 카테고리에서만 표시가능.</p><p>페이지나 문서내의 첨부사진은 사진포스트보다 열화가 더 심함을 고려해야함. 디지털열화를 방지하기위해 이미지 사용시 원본출처를 우선사용 필요</p><p>fanart, fan_art, fan-art 등의 태그중 <a href="https://www.reddit.com/r/fanart/" target="_blank">https://www.reddit.com/r/fanart/</a> 페이지를 참고해 fanart가 가장 대표성을 띈다고 판단해 동일하게 카테고리명으로 선정함</p><p>숨겨지기만 하고 전면페이지의 로딩포스트갯수에는 포함되기때문에 무한스크롤 로드에 방해가 되는 문제가 있음 다음페이지 로드 기준 개선 필요</p><p>페이지나 텍스트포스트에 첨부된 사진은 사진포스트보다 열화됨을 확인. 감안or개선필요</p><p>+20200503<br/>기존메인페이지처리방식에서 텍스트문서가 많을경우 아예 로드가 정상적으로 되지 않는경우가 있었음. 정확한 원인을 분석하진 못했지만 <a href="https://themes.stashfamily.com/themes/curly/" target="_blank">curly</a>테마코드분석을 더 해본결과 
+
+<a href="https://isotope.metafizzy.co/" target="_blank">Isotope</a> 라이브러리에서 자체적인 filter기능이 있어 적용한결과 <a href="https://infinite-scroll.com/" target="_blank">Infinite Scroll</a> 기능과 충돌없이 정상작동함을 확인함. 더불어 코드변경사항도 최소화됨<br/><a href="https://github.com/naratteu/phanyan.tumblr/commit/54ee5b618f63ad6b17bcc749de6160913f3ead3e" target="_blank">깃허브 히스토리</a></p>
+                
+                
+                
+                
+                
+                
+                                <div id="footer">
+                <span id="timestamp"> April 25th, 2020 12:21am </span>
+                                                          <span class="tag">misc</span>
+                                                    </div>
+            </body>
+        </html>
+
+        
